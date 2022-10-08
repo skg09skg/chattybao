@@ -1,0 +1,206 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+  }
+  &__image {
+    width: 27%;
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    h5 {
+      font-size: 20px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.fixed-top {
+  z-index: 50 !important;
+}
+.dropdown-menu {
+  // a:hover {
+  //   color: #025780 !important;
+  // }
+  margin-top: 12px;
+}
+.fixed-header .nav-link {
+  color: #0375b0 !important;
+}
+.container {
+  max-width: 95% !important;
+}
+.navbar-dropdown {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  li {
+    list-style-type: none !important;
+  }
+}
+.navbar-login {
+  display: flex;
+}
+.nav-item {
+  list-style-type: none !important;
+  margin: 0 10px;
+}
+.navbar-hide {
+  width: 70%;
+}
+.fa-bars {
+  // width: 40px !important;
+  border-radius: 50%;
+  font-size: 22px !important;
+  float: right;
+  color: #fff !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.fa-close {
+  display: none;
+  // width: 40px !important;
+  border-radius: 50%;
+  font-size: 22px !important;
+  float: right;
+  color: #fff !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.fixed-header .fa-bars {
+  color: #0375b0 !important;
+}
+.header-light.header-toggle .fa-close {
+  color: #0375b0 !important;
+  display: block;
+}
+.header-light.header-toggle .fa-bars {
+  color: #0375b0 !important;
+  display: none;
+}
+.btn {
+  font-size: 18px !important;
+  padding: 0.65rem 1.2rem !important;
+}
+.navbar-nav {
+  justify-content: flex-end !important;
+  width: 100%;
+  .nav-item {
+    .nav-link {
+      font-size: 22px !important;
+      font-family: "Bahnschrift";
+      font-weight: 600 !important;
+    }
+  }
+}
+.header-profile-img {
+  position: relative;
+  width: 30%;
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        width: 100%;
+      }
+    }
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #414141;
+  }
+  .navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+  }
+  .navbar {
+    padding: 0 20px 1rem 20px;
+  }
+  .header {
+    &__image {
+      width: 70%;
+    }
+  }
+  .navbar-dropdown {
+    justify-content: start;
+  }
+  .container {
+    max-width: 100% !important;
+  }
+  .cart-number1 {
+    margin-right: 5px;
+  }
+  .navbar-login {
+    display: block;
+  }
+  .fa-bars {
+    margin-right: 10px;
+  }
+  .dropdown-item {
+    font-size: 0.8rem !important;
+    padding: 0.4rem !important;
+  }
+  .navbar-brand {
+    width: 220px;
+    img {
+      width: 220px;
+    }
+  }
+  .navbar-toggler {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .position-left {
+    margin-right: 30px;
+  }
+  .position-right {
+    margin-right: 30px;
+  }
+  .navbar-login {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1420px) {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 20px !important;
+      }
+    }
+  }
+  .con {
+    padding: 0 4%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2560px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (min-width: 1460px) and (max-width: 2560px) {
+  .container {
+    min-width: 1140px;
+    max-width: 85%;
+  }
+}
+

@@ -1,0 +1,136 @@
+.contactus {
+  padding: 8% 5%;
+  &__container {
+    width: 100%;
+    background-color: #fff;
+    padding: 110px 3%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+  }
+  &__header {
+    width: 45%;
+    text-align: center;
+    background-color: #e98424;
+    padding: 150px 6%;
+    position: absolute;
+    left: -100px;
+    border-radius: 30px;
+    top: 75px;
+  }
+  &__content {
+    width: 60%;
+  }
+}
+.content {
+  &__mail {
+    display: flex;
+    h5 {
+      padding-right: 10px;
+    }
+  }
+  &__number {
+    display: flex;
+    h5 {
+      padding-right: 10px;
+    }
+  }
+  &__section1 {
+    padding-bottom: 30px;
+  }
+  &__section2 {
+    display: flex;
+    align-items: center;
+    background-color: #0375b0;
+    padding: 8px 20px;
+    border-radius: 20px;
+    width: fit-content;
+    .fa-whatsapp {
+      background-color: #2ca74a;
+      color: #fff;
+      padding: 3px 4px;
+      font-size: 26px;
+      border: 0;
+    }
+    h3 {
+      color: #fff;
+      font-size: 28px;
+    }
+  }
+  &__section2 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1420px) {
+  .contactus {
+    display: flex;
+    justify-content: center;
+    &__container {
+      padding: 100px 3%;
+      width: 90%;
+    }
+    &__content {
+      width: 55%;
+    }
+    &__header {
+      width: 50%;
+      text-align: center;
+      background-color: #e98424;
+      padding: 180px 6%;
+      position: absolute;
+      left: -130px;
+      border-radius: 30px;
+      top: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .contactus {
+    padding-top: 145px;
+    padding-bottom: 80px;
+    &__container {
+      flex-direction: column;
+      padding: 80px 10px 30px 10px;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__header {
+      width: 90%;
+      left: 14px;
+      top: -43px;
+      padding: 30px 10px;
+    }
+  }
+  .content {
+    &__section3 {
+      text-align: center;
+      h6 {
+        font-size: 15px;
+      }
+    }
+    &__section1 {
+      padding: 20px 0 50px 0;
+      text-align: start;
+    }
+    &__mail {
+      padding: 20px;
+      flex-direction: column;
+      h5 {
+        margin: 2px 0;
+        font-size: 24px;
+      }
+    }
+    &__number {
+      padding: 20px;
+      flex-direction: column;
+      h5 {
+        margin: 2px 0;
+      }
+    }
+  }
+}
